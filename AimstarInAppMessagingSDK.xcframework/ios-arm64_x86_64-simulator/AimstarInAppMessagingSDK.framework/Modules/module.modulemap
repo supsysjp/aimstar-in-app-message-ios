@@ -1,0 +1,11 @@
+framework module AimstarInAppMessagingSDK {
+  umbrella header "AimstarInAppMessaging-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module AimstarInAppMessagingSDK.Swift {
+  header "AimstarInAppMessagingSDK-Swift.h"
+  requires objc
+}
