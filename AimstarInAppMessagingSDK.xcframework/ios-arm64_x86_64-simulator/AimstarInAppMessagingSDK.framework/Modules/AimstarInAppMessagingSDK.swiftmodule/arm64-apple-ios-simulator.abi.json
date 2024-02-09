@@ -1087,994 +1087,1001 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 42,
       "length": 41,
       "value": "\"https:\/\/event-prod.aimstar.jp\/ignite\/v1\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "BooleanLiteral",
       "offset": 498,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1024,
       "length": 118,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 1,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1102,
       "length": 1,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1141,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1199,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1243,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "IntegerLiteral",
       "offset": 1265,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1288,
       "length": 12,
       "value": "\"hw.machine\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "IntegerLiteral",
       "offset": 1319,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "IntegerLiteral",
       "offset": 1363,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1401,
       "length": 12,
       "value": "\"hw.machine\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "IntegerLiteral",
       "offset": 1437,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1760,
       "length": 10,
       "value": "\"apikey: \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1795,
       "length": 12,
       "value": "\"tenantId: \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 1834,
       "length": 11,
       "value": "\"apiHost: \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 2117,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "IntegerLiteral",
       "offset": 2271,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "Array",
       "offset": 2312,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 2348,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "BooleanLiteral",
       "offset": 3407,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 3527,
       "length": 50,
       "value": "\"Error \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 3546,
       "length": 1,
       "value": "\": \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 3576,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4193,
       "length": 11,
       "value": "\"tenant-id\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4218,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4234,
       "length": 11,
       "value": "\"x-api-key\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4257,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4273,
       "length": 21,
       "value": "\"x-ignite-visitor-id\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4338,
       "length": 22,
       "value": "\"x-ignite-customer-id\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4411,
       "length": 6,
       "value": "\"x-os\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4419,
       "length": 5,
       "value": "\"iOS\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4438,
       "length": 14,
       "value": "\"x-os-version\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4473,
       "length": 15,
       "value": "\"x-device-name\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4514,
       "length": 15,
       "value": "\"x-sdk-version\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4551,
       "length": 14,
       "value": "\"content-type\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
       "offset": 4567,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "kind": "Dictionary",
+      "offset": 4863,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
-      "offset": 4810,
+      "offset": 5231,
       "length": 21,
       "value": "\"x-ignite-visitor-id\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "StringLiteral",
-      "offset": 4936,
+      "offset": 5322,
       "length": 22,
       "value": "\"x-ignite-customer-id\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 1516,
+      "offset": 1544,
       "length": 86,
       "value": "\"reactionEvents data= \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "StringLiteral",
-      "offset": 1601,
+      "offset": 1629,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2843,
+      "offset": 2879,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2849,
+      "offset": 2885,
       "length": 3,
       "value": "299"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2903,
+      "offset": 2939,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2909,
+      "offset": 2945,
       "length": 3,
       "value": "499"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2968,
+      "offset": 3004,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2974,
+      "offset": 3010,
       "length": 3,
       "value": "599"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4423,
+      "offset": 4459,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4429,
+      "offset": 4465,
       "length": 3,
       "value": "299"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4483,
+      "offset": 4519,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4489,
+      "offset": 4525,
       "length": 3,
       "value": "499"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4548,
+      "offset": 4584,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/APIClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4554,
+      "offset": 4590,
       "length": 3,
       "value": "599"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsReactionRequest.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsReactionRequest.swift",
       "kind": "StringLiteral",
       "offset": 290,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsReactionRequest.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsReactionRequest.swift",
       "kind": "StringLiteral",
       "offset": 316,
       "length": 22,
       "value": "\"\/app_events\/reaction\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsViewRequest.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 181,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsViewRequest.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/EventsViewRequest.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 18,
       "value": "\"\/app_events\/view\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessage.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessage.swift",
       "kind": "StringLiteral",
       "offset": 68,
       "length": 19,
       "value": "\"image_with_button\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessage.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessage.swift",
       "kind": "StringLiteral",
       "offset": 68,
       "length": 19,
       "value": "\"image_with_button\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessageListResponse.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/InAppMessageListResponse.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 26,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss'Z'\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 333,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 368,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 442,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
       "offset": 534,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 584,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 595,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 630,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 737,
       "length": 8,
       "value": "0x586976"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
       "offset": 754,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 828,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 942,
       "length": 8,
       "value": "0x7b98a8"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 959,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1157,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1251,
       "length": 8,
       "value": "0x1d2635"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1303,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1334,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1462,
       "length": 8,
       "value": "0x1d2635"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1510,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1541,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1671,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1706,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
       "offset": 2025,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 2298,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2480,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2597,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2694,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2798,
       "length": 3,
       "value": "-30"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2870,
       "length": 3,
       "value": "320"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3372,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3376,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3618,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3716,
       "length": 3,
       "value": "-15"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3788,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3861,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4290,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4617,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4721,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4828,
       "length": 3,
       "value": "-24"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 4930,
       "length": 3,
       "value": "-24"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5907,
+      "offset": 5921,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 6126,
+      "offset": 6140,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6334,
+      "offset": 6348,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6712,
+      "offset": 6800,
       "length": 38,
       "value": "\"Send reaction error! error= \""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 6749,
+      "offset": 6837,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7077,
+      "offset": 7165,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "Dictionary",
-      "offset": 7374,
+      "offset": 7462,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7694,
+      "offset": 7782,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "StringLiteral",
       "offset": 20,
       "length": 33,
       "value": "\"AimstarInAppMessagingSDK.InAppMessagingModalViewController\""
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7801,
+      "offset": 7889,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7851,
+      "offset": 7939,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7857,
+      "offset": 7945,
       "length": 4,
       "value": "0xFF"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7865,
+      "offset": 7953,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7903,
+      "offset": 7991,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7908,
+      "offset": 7996,
       "length": 4,
       "value": "0xFF"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7916,
+      "offset": 8004,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 7952,
+      "offset": 8040,
       "length": 4,
       "value": "0xFF"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 7960,
+      "offset": 8048,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 8101,
+      "offset": 8189,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8175,
+      "offset": 8263,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8182,
+      "offset": 8270,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 8921,
+      "offset": 9009,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 9385,
+      "offset": 9473,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9392,
+      "offset": 9480,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 9576,
+      "offset": 9664,
       "length": 3,
       "value": "2.5"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9613,
+      "offset": 9701,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9619,
+      "offset": 9707,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9665,
+      "offset": 9753,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9678,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9721,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9727,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 9766,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 9779,
+      "offset": 9809,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9815,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9854,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9867,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 10180,
+      "offset": 10268,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10346,
+      "offset": 10434,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10367,
+      "offset": 10455,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10467,
+      "offset": 10555,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10696,
+      "offset": 10784,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10717,
+      "offset": 10805,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 10816,
+      "offset": 10904,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/DefaultUI\/Modal\/InAppMessagingModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10981,
+      "offset": 11069,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banjun\/projects\/supremesystem\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/UserDefaults.swift",
+      "filePath": "\/Users\/k-kubo\/ghq\/github.com\/supsysjp\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/UserDefaults.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 24,

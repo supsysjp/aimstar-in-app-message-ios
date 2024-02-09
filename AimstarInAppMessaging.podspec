@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
   s.name             = 'AimstarInAppMessaging'
   s.module_name      = 'AimstarInAppMessagingSDK'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'AimstarInAppMessaging'
   s.description      = 'AimstarInAppMessaging SDK'
   s.homepage         = 'https://github.com/supsysjp/aimstar-in-app-message-ios'
