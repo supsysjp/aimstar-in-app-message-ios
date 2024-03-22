@@ -5,6 +5,7 @@
 @_exported import AimstarInAppMessagingSDK
 import Foundation
 import Swift
+import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
