@@ -1,30 +1,33 @@
-# Aimstar In-App Messaging SDK
+# AIMSTAR In-App Messaging iOS SDK
 
 ## Requirements
 
-ランタイム: iOS 17以上をサポート  
-開発環境: Xcode 26.1.1 on macOS Sequoia 15.6
+- ランタイム: iOS 16.0 以上
+- 開発環境: Xcode (Swift 5.10 対応バージョン)
 
 ## 制限事項
 
 - マルチウインドウアプリには対応していません
-- SwiftUIベースのアプリも現時点では非推奨です
-- 後述する `5.ページ閲覧イベントの送出` 実行後にポップアップが表示される可能性がありますが、現時点では表示を抑制する機能が存在しないため、ポップアップ表示時には実行しないなどの排他制御を行なっていただく必要がございます
 
 ## SDKで提供する機能について
 
 - アプリのページ閲覧イベントを送信する
-- 対象と判定されたユーザーに、ポップアップを表示する
-- ポップアップ表示、ユーザー操作による非表示、コンバージョンボタンのタップの各イベントを送信する
+- 対象と判定されたユーザーに、以下の3種類のメッセージを表示する
+  - **ポップアップモーダル**: 画面中央に表示されるモーダルダイアログ
+  - **ポップアップバナー**: 画面上部/中央/下部に表示されるバナー（位置は9箇所から指定可能）
+  - **埋め込みバナー**: アプリの任意の場所に埋め込み表示するバナー
+- メッセージの表示、ユーザー操作による非表示、コンバージョンボタンのタップの各イベントを送信する
+- UIKit / SwiftUI の両方に対応
 
 ## 用語
 
 | 用語 | 説明 |
 | - | - |
-| API Key | AimstarMessaging を利用するために必要な API キーで、Aimstar 側で事前にアプリ開発者に発行されます。 |
-| Tenant ID | AimstarMessaging を利用するために必要なテナント ID で、Aimstar 側で事前にアプリ開発者に発行されます。 |
+| API Key | AimstarInAppMessaging を利用するために必要な API キーで、AIMSTAR 側で事前にアプリ開発者に発行されます。 |
+| Tenant ID | AimstarInAppMessaging を利用するために必要なテナント ID で、AIMSTAR 側で事前にアプリ開発者に発行されます。 |
 | Customer ID | アプリ開発者がユーザーを識別する ID で、アプリ開発者が独自に発行、生成、または利用します。 |
 | ScreenName | アプリ側で設定するトリガーの一種（アプリ開発者が任意に設定する識別名）で、ユーザーが特定の画面を表示したり、またはアクションを行うなどの条件を満たした場合に、識別名を使ってメッセージを呼び出すために利用されます。 |
+| ComponentID | 埋め込みバナーを識別するための文字列 ID です。AIMSTAR 管理画面で設定した値と、アプリ側で指定する値を一致させる必要があります。 |
 
 ## 導入手順
 
@@ -32,7 +35,7 @@
 
 #### CocoaPodsを利用する場合
 
-Podfileに以下を追記し、`pod install` を実行します。
+Podfileに以下を追記し、`pod install` を実行してください。
 
 ```ruby
 pod "AimstarInAppMessaging"
@@ -40,43 +43,39 @@ pod "AimstarInAppMessaging"
 
 #### 手動で追加する場合
 
-[releases](https://github.com/supsysjp/aimstar-in-app-message-ios/releases) から `AimstarInAppMessagingSDK.zip` をダウンロードして展開し、AimstarInAppMessagingSDK.xcframeworkをプロジェクトに含めます。
+[Releases](https://github.com/supsysjp/aimstar-in-app-message-ios/releases) から `AimstarInAppMessagingSDK.zip` をダウンロードして展開し、AimstarInAppMessagingSDK.xcframeworkをプロジェクトに含めてください。
 
 ### 2. SDKの初期化とイベントリスナーを設定する
 
-`application(_:didFinishLaunchingWithOptions:)` メソッド内に初期化コードを追加します
+`application(_:didFinishLaunchingWithOptions:)` メソッド内に初期化コードを追加します。
 
 ```swift
 import AimstarInAppMessagingSDK
-
-...
 
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     let API_KEY = "Your API KEY"
     let TENANT_ID = "Your TENANT ID"
     // SDKの初期化を行います
     AimstarInAppMessaging.shared.setup(apiKey: API_KEY, tenantId: TENANT_ID)
-    // イベントリスナーを設定します
+    // イベントリスナーを設定します（任意）
     AimstarInAppMessaging.shared.delegate = self
     ...
 }
 
-...
-
 extension AppDelegate: AimstarInAppMessagingDelegate {
     func messageDismissed(_ message: InAppMessage) {
-        // ポップアップが非表示になったタイミングで実行
+        // メッセージが非表示になったタイミングで実行
     }
-    
+
     func messageClicked(_ message: InAppMessage) {
-        // ポップアップ内のボタンがタップされたタイミングで実行
+        // メッセージ内のボタンがタップされたタイミングで実行
     }
-    
+
     func messageDetectedForDisplay(_ message: InAppMessage) {
-        // 表示対象のメッセージが見つかった際に実行。この後ポップアップが表示される
+        // 表示対象のメッセージが見つかった際に実行。この後メッセージが表示される
     }
-    
-    func messageError(_ message: InAppMessage?, error: Error) {
+
+    func messageError(_ message: InAppMessage?, error: AimstarError) {
         // SDK内でエラーが発生した際に実行
     }
 }
@@ -84,7 +83,7 @@ extension AppDelegate: AimstarInAppMessagingDelegate {
 
 ### 3. Customer IDの設定
 
-SDKの初期化後に必要に応じてCustomer IDを設定します。
+SDKの初期化後に必要に応じてCustomer IDを設定してください。
 
 ```swift
 // アプリにユーザーがログインした後など、ユーザーが識別できるようになった後に実行
@@ -93,547 +92,125 @@ AimstarInAppMessaging.shared.customerId = "ユーザーを識別するID"
 
 #### ユーザーのログイン・ログアウト状態の判定
 
-`AimstarInAppMessaging.shared.customerId` にユーザーIDが設定されているかどうかで状態が判定されます。従って、ユーザーがログアウトを実行した際には `null` を設定いただく必要がございます。
+`AimstarInAppMessaging.shared.customerId` にユーザーIDが設定されているかどうかで状態が判定されます。従って、ユーザーがログアウトを実行した際には `nil` を設定してください。
 
 ### 4. isStrictLoginフラグの設定
 
-ユーザーのログイン・ログアウト状態を厳密に判定する場合は `AimstarInAppMessaging.shared.isStrictLogin` を `true` に設定する必要があります。初期値は `false` です。
-
-### 5. ページ閲覧イベントの送出
-
-スクリーン名を設定して fetch メソッドを実行します。
+ユーザーのログイン・ログアウト状態を厳密に判定する場合は `true` を設定してください。初期値は `false` です。
 
 ```swift
-AimstarInAppMessaging.shared.fetch(on: self, screenName: "Your Screen Name")
+AimstarInAppMessaging.shared.isStrictLogin = true
 ```
 
-#### カスタムパラメータの指定
+### 5. メッセージの取得と表示
 
-`fetch` メソッドには、カスタムパラメータを渡すことができます。カスタムパラメータは、管理画面側でのメッセージの表示条件などに使用できます。
+#### UIKit
 
-カスタムパラメータを指定する場合は、クロージャを使用してパラメータを設定します：
+スクリーン名を設定して `fetch` メソッドを実行します。
 
 ```swift
-AimstarInAppMessaging.shared.fetch(on: self, screenName: "Your Screen Name") { customParams in
-    customParams.putString("user_type", "premium")
-    customParams.putInt("product_id", 12345)
-}
+// シンプルな呼び出し（最前面のViewControllerに自動表示）
+AimstarInAppMessaging.shared.fetch(screenName: "Your Screen Name")
+
+// ポップアップバナーの表示先ViewControllerを指定する場合
+AimstarInAppMessaging.shared.fetch(screenName: "Your Screen Name", on: self)
 ```
 
-利用可能なメソッド：
-
-- `putString(_:value:)` - 指定したキーに対して文字列値を設定
-- `putInt(_:value:)` - 指定したキーに対して整数値を設定
-
----
-
-# 利用ガイド
-
-> **注意**: ポップアップバナーと埋め込みバナーは現在開発中です。これらの機能を使用する際は、仕様が変更される可能性があることにご注意ください。
-
-## 基本的な使い方
-
-### 実装の流れ
-
-1. **アプリ起動時にSDKを初期化**
-   - `application(_:didFinishLaunchingWithOptions:)` 内で `setup(apiKey:tenantId:)` を呼び出します
-   - 必要に応じて `delegate` を設定してイベントを受け取ります
-
-2. **ユーザー識別情報の設定**
-   - ユーザーがログインした際に `customerId` を設定します
-   - ログアウト時には `customerId` を `nil` に設定します
-
-3. **ページ閲覧イベントの送信**
-   - 各画面の `viewDidAppear` など、適切なタイミングで `fetch(on:screenName:)` を呼び出します
-   - ScreenNameは画面ごとに一意の識別子を設定してください
-
-### 実装例
+デフォルトでは、ポップアップバナーは対象ViewControllerのセーフエリア上端・下端を基準に表示されます。カスタムヘッダーやタブバーなど、アプリ固有のUI要素とバナーが重ならないようにするには、`topAnchor` / `bottomAnchor` を指定してください。
 
 ```swift
-import UIKit
+// ヘッダーの下端〜タブバーの上端の範囲内にバナーを表示する
+AimstarInAppMessaging.shared.fetch(
+    screenName: "Your Screen Name",
+    on: self,
+    topAnchor: headerView.bottomAnchor,
+    bottomAnchor: tabBar.topAnchor
+)
+```
+
+#### SwiftUI
+
+`.aimstarScreen()` モディファイアを使用します。
+
+```swift
 import AimstarInAppMessagingSDK
 
-class ViewController: UIViewController {
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        // ページ閲覧イベントを送信
-        AimstarInAppMessaging.shared.fetch(on: self, screenName: "home")
-        
-        // カスタムパラメータを渡す場合の例
-        // AimstarInAppMessaging.shared.fetch(on: self, screenName: "home") { customParams in
-        //     customParams.putString("user_type", "premium")
-        //     customParams.putInt("product_id", 12345)
-        // }
-    }
-    
-    @IBAction func loginButtonTapped(_ sender: UIButton) {
-        // ログイン処理...
-        
-        // ログイン成功後にCustomer IDを設定
-        AimstarInAppMessaging.shared.customerId = "user_12345"
-    }
-    
-    @IBAction func logoutButtonTapped(_ sender: UIButton) {
-        // ログアウト処理...
-        
-        // ログアウト時にCustomer IDをクリア
-        AimstarInAppMessaging.shared.customerId = nil
+struct HomeView: View {
+    var body: some View {
+        NavigationStack {
+            ContentView()
+        }
+        .aimstarScreen("Your Screen Name")
     }
 }
 ```
 
-## ポップアップの仕様
+**カスタムタブバー等との重なりを避ける場合:**
 
-### 表示タイミング
-
-ポップアップは以下の条件を満たした場合に自動的に表示されます：
-
-1. **ページ閲覧イベントの送信後**
-   - `fetch(on:screenName:)` メソッドを呼び出した後、サーバーからメッセージが取得できた場合
-   - ユーザーが表示対象として判定された場合
-
-2. **表示判定のタイミング**
-   - `messageDetectedForDisplay(_:)` デリゲートメソッドが呼び出された直後
-   - このメソッドが呼ばれた時点で、ポップアップが表示されることが確定します
-
-### 表示方法
-
-- **新しいWindowを生成して表示**
-  - SDKはアプリの既存のWindowとは別に、専用のWindowを生成します
-  - このWindowは最前面に表示され、アプリの他のUIの上に重なって表示されます
-  - ポップアップが表示されている間、ユーザーはアプリの他の部分と操作できません
-
-### UI仕様
-
-#### レイアウト
-
-- **モーダル表示**
-  - 画面全体を覆う半透明の背景（オーバーレイ）が表示されます
-  - 中央にポップアップダイアログが表示されます
-
-#### コンポーネント
-
-- **タイトル**
-  - メッセージのタイトルが表示されます（設定されている場合）
-
-- **画像**
-  - メッセージの画像が表示されます（設定されている場合）
-
-- **本文**
-  - メッセージの本文テキストが表示されます
-
-- **ボタン**
-  - コンバージョンボタン（OKボタンなど）が表示されます
-  - ボタンのテキストやスタイルはサーバー側で設定された内容が反映されます
-
-- **閉じるボタン**
-  - ポップアップを閉じるためのボタンが表示されます（通常は×ボタンなど）
-
-#### スタイリング
-
-- ポップアップのデザイン（色、フォント、サイズなど）はサーバー側で設定された内容が反映されます
-- アプリ側でカスタマイズすることはできません
-
-### 動作仕様
-
-#### 表示の制御
-
-- **表示の抑制機能**
-  - 現時点では、ポップアップの表示を抑制する機能は提供されていません
-  - ポップアップが表示される可能性があるタイミングでは、`fetch(on:screenName:)` の呼び出しを制御してください
-
-#### ユーザー操作
-
-- **ボタンタップ**
-  - コンバージョンボタンをタップすると、`messageClicked(_:)` デリゲートメソッドが呼び出されます
-  - その後、ポップアップが自動的に閉じられます
-
-- **閉じる操作**
-  - 閉じるボタンをタップ、または背景をタップすることでポップアップを閉じることができます
-  - ポップアップが閉じられると、`messageDismissed(_:)` デリゲートメソッドが呼び出されます
-
-#### 複数メッセージの処理
-
-- 同一の `fetch(on:screenName:)` 呼び出しで複数のメッセージが取得された場合、最初の1件のみが表示されます
-- 複数のメッセージを順次表示する機能は現時点では提供されていません
-
-### イベントの送信
-
-SDKは以下のタイミングでイベントをサーバーに送信します：
-
-1. **ページ閲覧イベント**
-   - `fetch(on:screenName:)` が呼び出された時点で送信されます
-
-2. **ポップアップ表示イベント**
-   - ポップアップが実際に表示された時点で送信されます
-
-3. **ボタンタップイベント**
-   - コンバージョンボタンがタップされた時点で送信されます
-
-4. **ポップアップ非表示イベント**
-   - ポップアップが閉じられた時点で送信されます
-
-## ポップアップバナーの仕様
-
-### 概要
-
-ポップアップバナーは、ポップアップと同様に `fetch(on:screenName:)` メソッドの呼び出しに応じて、APIからのレスポンス内容に基づいて自動的に表示されるバナーコンポーネントです。ポップアップとは異なり、画面全体を覆うモーダルではなく、画面の特定の位置にフローティング表示されます。
-
-### 表示タイミング
-
-ポップアップバナーは以下の条件を満たした場合に自動的に表示されます：
-
-1. **ページ閲覧イベントの送信後**
-   - `fetch(on:screenName:)` メソッドを呼び出した後、サーバーからバナーメッセージが取得できた場合
-   - ユーザーが表示対象として判定された場合
-   - 管理画面でバナーの表示が設定されている場合
-
-2. **表示判定のタイミング**
-   - `messageDetectedForDisplay(_:)` デリゲートメソッドが呼び出された直後
-   - このメソッドが呼ばれた時点で、バナーが表示されることが確定します
-
-### 表示方法
-
-- **フローティング表示**
-  - SDKはアプリの既存のWindow上に、バナーをフローティング表示します
-  - 管理画面で指定した位置（上下・左右の組み合わせ）に表示されます
-  - 画面をスクロールしても、指定された位置に固定されて表示されます
-
-### UI仕様
-
-#### レイアウト
-
-- **位置指定**
-  - 管理画面で以下の組み合わせから位置を指定できます：
-    - **上下**: 上部 / 中央 / 下部
-    - **左右**: 左 / 中央 / 右
-  - 例: 上部中央、下部右など
-
-- **固定表示**
-  - 画面をスクロールしても、指定された位置に固定されて表示されます
-  - アプリの他のUI要素の上に重なって表示されます
-
-#### コンポーネント
-
-- **メッセージ内容**
-  - 画像、タイトルなど、管理画面で設定された内容が表示されます
-
-- **閉じるボタン**
-  - バナーを閉じるためのボタンが表示されます
-  - ボタンをタップすることで、バナーを非表示にできます
-
-#### スタイリング
-
-- バナーのデザイン（色、フォント、サイズ、角丸など）はサーバー側で設定された内容が反映されます
-- アプリ側でカスタマイズすることはできません
-
-### 動作仕様
-
-#### ユーザー操作
-
-- **閉じる操作**
-  - 閉じるボタンをタップすることでバナーを非表示にできます
-  - バナーが閉じられると、`messageDismissed(_:)` デリゲートメソッドが呼び出されます
-
-- **コンテンツタップ**
-  - バナーのコンテンツ部分をタップした場合の動作は、管理画面で設定された内容に従います
-  - コンバージョンアクションが設定されている場合、`messageClicked(_:)` デリゲートメソッドが呼び出されます
-
-#### 表示の制御
-
-- **表示の抑制機能**
-  - 現時点では、ポップアップバナーの表示を抑制する機能は提供されていません
-  - バナーが表示される可能性があるタイミングでは、`fetch(on:screenName:)` の呼び出しを制御してください
-
-#### 複数メッセージの処理
-
-- 同一の `fetch(on:screenName:)` 呼び出しで複数のバナーメッセージが取得された場合、表示位置が重ならないように、表示位置ごとに最初の1件のみが表示されます
-
-### イベントの送信
-
-SDKは以下のタイミングでイベントをサーバーに送信します：
-
-1. **ページ閲覧イベント**
-   - `fetch(on:screenName:)` が呼び出された時点で送信されます
-
-2. **バナー表示イベント**
-   - バナーが実際に表示された時点で送信されます
-
-3. **コンテンツタップイベント**
-   - バナーのコンテンツがタップされた時点で送信されます（設定されている場合）
-
-4. **バナー非表示イベント**
-   - バナーが閉じられた時点で送信されます
-
-## 埋め込みバナーの仕様
-
-### 概要
-
-埋め込みバナーは、SDK側で作成されているコンポーネントを、アプリの任意のUI内に埋め込んで使用するバナーコンポーネントです。ポップアップやポップアップバナーとは異なり、`fetch(on:screenName:)` による自動表示ではなく、開発者が明示的にUIに配置します。
-
-### 使用方法
-
-#### 基本的な実装
-
-埋め込みバナーを使用するには、`componentId` をパラメータとして指定する必要があります。
-
-UIKitを用いた場合の実装例
+`.aimstarScreen()` は内部の overlay がセーフエリアを自動的に尊重します。カスタムタブバーなどアプリ固有のUI要素とポップアップバナーが重ならないようにするには、`.safeAreaInset` でその領域をセーフエリアに含めたうえで、`.aimstarScreen()` を `.safeAreaInset` の**後**に適用してください。
 
 ```swift
-import UIKit
-import AimstarInAppMessagingSDK
-
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // ビューが読み込まれたタイミングで、バナーコンポーネントを取得してビュー階層に追加
-        setupEmbeddedBanner()
-
-        // コンテンツを読み込むためにfetchを呼び出す
-        AimstarInAppMessaging.shared.fetch(on: self, screenName: "your_screen_name")
-        
-        // カスタムパラメータを渡す場合の例
-        // AimstarInAppMessaging.shared.fetch(on: self, screenName: "your_screen_name") { customParams in
-        //     customParams.putString("user_type", "premium")
-        //     customParams.putInt("product_id", 12345)
-        // }
+ContentView()
+    .safeAreaInset(edge: .bottom) {
+        CustomTabBar()  // このタブバー領域を避けてバナーが表示される
     }
-
-    private func setupEmbeddedBanner() {
-        // componentIdを指定してバナーコンポーネントを取得
-        let componentId = "your_component_id"
-
-        // SDKからバナーコンポーネントを取得
-        let bannerView = InAppMessagingUIEmbeddedBanner()
-        bannerView.componentId = componentId
-
-        // 他のUI要素と同様に、Auto Layout等を使用して配置します
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(bannerView)
-        NSLayoutConstraint.activate([
-            bannerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            bannerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            bannerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bannerView.heightAnchor.constraint(equalToConstant: 100)
-        ])
-    }
-}
+    .aimstarScreen("Your Screen Name")
 ```
 
-SwiftUIを用いた場合の実装例
+> **注意:** `.aimstarScreen()` を `.safeAreaInset` より**前**に適用すると、セーフエリアの変更がバナーの配置に反映されず、バナーとカスタムUI要素が重なる可能性があります。
+
+#### 埋め込みバナー
+
+アプリの任意の場所にバナーを埋め込む場合は、埋め込みバナーコンポーネントを使用します。
+
+**SwiftUI:**
 
 ```swift
-import SwiftUI
 import AimstarInAppMessagingSDK
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            // バナーコンポーネントを配置
-            InAppMessagingEmbeddedBanner(componentId: "your_component_id")
-        }.onAppear {
-            // 任意のタイミングでコンテンツを読み込むために、fetchを呼び出す
-            AimstarInAppMessaging.shared.fetch(screenName: "your_screen_name")
+            IAMEmbeddedBanner(componentId: "your_component_id")
         }
+        .aimstarScreen("Your Screen Name")
     }
 }
 ```
 
-### パラメータ
-
-#### componentId（必須）
-
-- **型**: `String`
-- **説明**: 管理画面で設定されたバナーコンポーネントの識別子
-- **注意**: 存在しない `componentId` を指定した場合、バナー内のコンテンツは表示されません
-
-### UI仕様
-
-#### レイアウト
-
-- **埋め込み表示**
-  - アプリの既存のUI要素として、指定した位置に配置されます
-  - Auto LayoutやFrameベースのレイアウトに対応しています
-  - 親ビューのサイズや制約に従って表示されます
-
-#### コンポーネント
-
-- **メッセージ内容**
-  - タイトル、本文、画像など、管理画面で設定された内容が表示されます
-  - `componentId` に対応するコンテンツが自動的に読み込まれます
-
-- **インタラクティブ要素**
-  - ボタンやリンクなど、管理画面で設定されたインタラクティブ要素が表示されます
-  - タップ時の動作は管理画面で設定された内容に従います
-
-#### スタイリング
-
-- バナーのデザイン（色、フォント、サイズなど）は管理画面で設定された内容が反映されます
-- アプリ側でサイズや位置は制御できますが、デザインのカスタマイズはできません
-
-### 動作仕様
-
-#### データの取得
-
-- **明示的なfetch呼び出し**
-  - 埋め込みバナーのコンテンツを読み込むには、クライアント側で明示的に `fetch` メソッドを呼び出す必要があります
-  - `componentId` を指定して `fetch` メソッドを呼び出すことで、サーバーからコンテンツを取得します
-  - 取得に失敗した場合、バナーは表示されないか、エラー状態になります
-  - コンテンツの更新が必要な場合も、再度 `fetch` メソッドを呼び出すことで最新のコンテンツを取得できます
-
-#### ユーザー操作
-
-- **コンテンツタップ**
-  - バナーのコンテンツ部分をタップした場合の動作は、管理画面で設定された内容に従います
-  - コンバージョンアクションが設定されている場合、`messageClicked(_:)` デリゲートメソッドが呼び出されます
-
-#### ライフサイクル
-
-- **表示タイミング**
-  - バナーコンポーネントがビュー階層に追加された時点で表示されます
-  - 親ビューが非表示になった場合、バナーも非表示になります
-
-- **更新**
-  - サーバー側でコンテンツが更新された場合、再度 `fetch` メソッドを呼び出すことで新しいコンテンツを取得できます
-  - コンテンツの更新は自動的には行われないため、必要に応じてクライアント側で `fetch` を呼び出す必要があります
-
-### イベントの送信
-
-SDKは以下のタイミングでイベントをサーバーに送信します：
-
-1. **バナー表示イベント**
-   - バナーが実際に表示された時点で送信されます
-
-2. **コンテンツタップイベント**
-   - バナーのコンテンツがタップされた時点で送信されます（設定されている場合）
-
-### 実装時の注意点
-
-- **componentIdの管理**
-  - `componentId` は管理画面で確認できる識別子です
-  - ハードコードする場合は、定数として管理することを推奨します
-  - 複数の画面で同じバナーを表示する場合は、共通のコンポーネントとして再利用できます
-
-- **エラーハンドリング**
-  - 存在しない `componentId` を指定した場合や、ネットワークエラーが発生した場合の処理を実装してください
-  - `messageError(_:error:)` デリゲートメソッドでエラーを検知できます
-
-- **レイアウトの考慮**
-  - 埋め込みバナーはアプリのUIの一部として配置されるため、レイアウトを適切に設計してください
-  - バナーのサイズは管理画面で設定された内容に依存するため、十分なスペースを確保してください
-
-## イベントハンドリング
-
-### デリゲートメソッドの実装
-
-SDKのイベントを適切に処理するために、`AimstarInAppMessagingDelegate` を実装してください。
+**UIKit:**
 
 ```swift
-extension AppDelegate: AimstarInAppMessagingDelegate {
-    
-    func messageDetectedForDisplay(_ message: InAppMessage) {
-        // ポップアップが表示される前に実行される処理
-        // 例: アプリの状態を保存、アニメーションを一時停止など
-        print("メッセージが検出されました: \(message)")
-    }
-    
-    func messageClicked(_ message: InAppMessage) {
-        // コンバージョンボタンがタップされた時の処理
-        // 例: 特定の画面に遷移、アナリティクスに送信など
-        print("メッセージがクリックされました: \(message)")
-    }
-    
-    func messageDismissed(_ message: InAppMessage) {
-        // ポップアップが閉じられた時の処理
-        // 例: アプリの状態を復元、次の処理を実行など
-        print("メッセージが閉じられました: \(message)")
-    }
-    
-    func messageError(_ message: InAppMessage?, error: Error) {
-        // エラーが発生した時の処理
-        // 例: エラーログの記録、ユーザーへの通知など
-        print("エラーが発生しました: \(error)")
-    }
+import AimstarInAppMessagingSDK
+
+let embeddedBanner = IAMUIEmbeddedBanner()
+embeddedBanner.componentId = "your_component_id"
+view.addSubview(embeddedBanner)
+```
+
+### 6. カスタムパラメータの送信
+
+`fetch` やモディファイアにカスタムパラメータを付与できます。
+
+```swift
+// UIKit
+AimstarInAppMessaging.shared.fetch(screenName: "Your Screen Name") {
+    putString("category", "electronics")
+    putInteger("age", 25)
+    putBoolean("is_premium", true)
+    putDouble("price", 99.9)
+    putStringArray("tags", ["sale", "new"])
 }
+
+// SwiftUI
+ContentView()
+    .aimstarScreen("Your Screen Name") {
+        putString("category", "electronics")
+        putInteger("age", 25)
+    }
 ```
 
-### 実装時の注意点
-
-- **排他制御**
-  - `fetch(on:screenName:)` を呼び出すと、ポップアップが表示される可能性があります
-  - 既にポップアップが表示されている場合は、新しい `fetch(on:screenName:)` の呼び出しを避けてください
-  - `messageDetectedForDisplay(_:)` や `messageDismissed(_:)` を活用して、ポップアップの表示状態を管理してください
-
-- **エラーハンドリング**
-  - `messageError(_:error:)` でエラーを適切に処理してください
-  - ネットワークエラーやサーバーエラーが発生した場合でも、アプリの動作に影響を与えないようにしてください
-
-## ユーザー状態の管理
-
-### Customer IDの設定
-
-- **ログイン時**
-
-```swift
-AimstarInAppMessaging.shared.customerId = "user_unique_id"
-```
-
-- **ログアウト時**
-
-```swift
-AimstarInAppMessaging.shared.customerId = nil
-```
-
-### isStrictLoginフラグ
-
-- **通常モード（デフォルト）**
-  - `isStrictLogin = false`（初期値）
-  - Customer IDが設定されていない場合でも、一部の機能が動作する場合があります
-
-- **厳密モード**
-  - `isStrictLogin = true` に設定
-  - Customer IDが設定されていない場合は、メッセージの取得や表示が制限されます
-  - ログイン必須のアプリで使用することを推奨します
-
-```swift
-// アプリ起動時に設定
-AimstarInAppMessaging.shared.isStrictLogin = true
-```
-
-## トラブルシューティング
-
-### ポップアップが表示されない場合
-
-1. **SDKの初期化を確認**
-   - `setup(apiKey:tenantId:)` が正しく呼び出されているか確認してください
-
-2. **Customer IDの設定を確認**
-   - `isStrictLogin = true` の場合、Customer IDが設定されている必要があります
-
-3. **ScreenNameの確認**
-   - `fetch(on:screenName:)` に渡しているScreenNameが、サーバー側で設定されているものと一致しているか確認してください
-
-4. **ネットワーク接続を確認**
-   - インターネット接続が正常か確認してください
-   - `messageError(_:error:)` でエラーが発生していないか確認してください
-
-5. **デリゲートの設定を確認**
-   - `delegate` が正しく設定されているか確認してください
-   - `messageDetectedForDisplay(_:)` が呼び出されているか確認してください
-
-### エラーが発生する場合
-
-- **エラーの種類を確認**
-  - `messageError(_:error:)` で受け取った `Error` の内容を確認してください
-
-- **API KeyとTenant IDの確認**
-  - 正しいAPI KeyとTenant IDが設定されているか確認してください
-
-- **ログの確認**
-  - デリゲートメソッド内でログを出力し、SDKの動作を確認してください
+対応する型: `putString`, `putInteger`, `putDouble`, `putBoolean`, `putStringArray`, `putIntegerArray`, `putDoubleArray`, `putBooleanArray`
 
 ---
 
@@ -645,39 +222,39 @@ AimstarInAppMessaging.shared.isStrictLogin = true
 class AimstarInAppMessaging
 ```
 
-SDKのエントリーポイントです。  
+SDKのエントリーポイントです。
 setupメソッドを通じて初期化を行います。初期化が行われていない場合は、SDKの機能が利用できません。
 
 ### Properties
 
-### delegate: AimstarInAppMessagingDelegate?（任意）
+#### delegate: AimstarInAppMessagingDelegate?
 
 ```swift
-delegate: AimstarInAppMessagingDelegate?
+weak var delegate: AimstarInAppMessagingDelegate?
 ```
 
-delegateを通じて、SDK側で発生したイベントをアプリ側に通知することができます
+delegateを通じて、SDK側で発生したイベントをアプリ側に通知することができます。すべてのメソッドはデフォルト実装が提供されているため、必要なメソッドのみ実装できます。
 
-### isStrictLogin: Boolean
+#### isStrictLogin: Bool
 
 ```swift
-var isStrictLogin = false
+var isStrictLogin: Bool
 ```
 
-このメンバをtrueにすると、ユーザーのログイン・ログアウト状態を厳密に判定するようになります。
+このプロパティを `true` にすると、ユーザーのログイン・ログアウト状態を厳密に判定するようになります。初期値は `false` です。
 
-### customerId: String?
+#### customerId: String?
 
 ```swift
 var customerId: String?
 ```
 
-ユーザーのIDを設定します。  
-nilが設定されている場合は、ログアウト状態として扱われます。
+ユーザーのIDを設定します。
+`nil` が設定されている場合は、ログアウト状態として扱われます。
 
 ### Functions
 
-### setup(apiKey:tenantId:)
+#### setup(apiKey:tenantId:)
 
 ```swift
 func setup(apiKey: String, tenantId: String)
@@ -685,37 +262,77 @@ func setup(apiKey: String, tenantId: String)
 
 SDKの初期化を行います。
 
-### fetch(on:screenName:)
+#### setup(apiKey:tenantId:apiHost:)
 
 ```swift
-func fetch(on: UIViewController, screenName: String)
+func setup(apiKey: String, tenantId: String, apiHost: String)
 ```
 
-任意のタイミングでこのメソッドを呼び出すと、SDKが指定された screenName でメッセージを取得します。メッセージが取得できた場合、指定された UIViewController の上にメッセージUIを表示します。
+APIホストを指定してSDKの初期化を行います。
 
-### fetch(on:screenName:customParameters:)
+#### fetch(screenName:customParameter:)
 
 ```swift
-func fetch(on: UIViewController, screenName: String, customParameters: ((CustomParameters) -> Void)?)
+func fetch(
+    screenName: String,
+    @CustomParameterBuilder customParameter: () -> [CustomParameterEntry] = { [] }
+)
 ```
 
-カスタムパラメータを指定してメッセージを取得します。`customParameters` クロージャ内で、`CustomParameters` オブジェクトを使用してパラメータを設定できます。これらのパラメータは管理画面側でのメッセージの表示条件などに使用できます。
+任意のタイミングでこのメソッドを呼び出すと、SDKが指定されたscreenNameでメッセージを取得します。メッセージが取得できた場合、メッセージタイプに応じたUIを表示します。
 
-- **customParameters**: カスタムパラメータを設定するクロージャ（オプショナル）。`nil` を渡すことも可能です。
+#### fetch(screenName:on:topAnchor:bottomAnchor:customParameter:)
 
-利用可能なメソッド：
+```swift
+func fetch(
+    screenName: String,
+    on targetVC: UIViewController,
+    topAnchor: NSLayoutYAxisAnchor? = nil,
+    bottomAnchor: NSLayoutYAxisAnchor? = nil,
+    @CustomParameterBuilder customParameter: () -> [CustomParameterEntry] = { [] }
+)
+```
 
-- `putString(_:value:)` - 指定したキーに対して文字列値を設定
-- `putInt(_:value:)` - 指定したキーに対して整数値を設定
+ポップアップバナーの表示先ViewControllerと表示位置を指定してメッセージを取得・表示します。
+
+## View.aimstarScreen(_:customParameter:)
+
+```swift
+func aimstarScreen(
+    _ screenName: String,
+    @CustomParameterBuilder customParameter: @escaping () -> [CustomParameterEntry] = { [] }
+) -> some View
+```
+
+SwiftUI用のViewモディファイアです。ビューの表示時にアプリ接客コンテンツを取得し、ポップアップバナー等を自動的に表示します。
+
+## IAMEmbeddedBanner (SwiftUI)
+
+```swift
+struct IAMEmbeddedBanner: View
+```
+
+SwiftUI用の埋め込みバナーコンポーネントです。`componentId` を指定して初期化します。
+
+## IAMUIEmbeddedBanner (UIKit)
+
+```swift
+class IAMUIEmbeddedBanner: UIView
+```
+
+UIKit用の埋め込みバナーコンポーネントです。`componentId` プロパティを設定してバナーを表示します。
 
 ## AimstarInAppMessagingDelegate
 
-protocolです  
-このDelegateを実装したオブジェクトをAimstarInAppMessagingに設定することによって、以下のイベントを検知できます
+```swift
+protocol AimstarInAppMessagingDelegate: AnyObject
+```
+
+このDelegateを実装したオブジェクトをAimstarInAppMessagingに設定することによって、以下のイベントを検知できます。すべてのメソッドに空のデフォルト実装が提供されているため、必要なメソッドのみ実装してください。
 
 ### Functions
 
-### messageDismissed(InAppMessage)
+#### messageDismissed(_:)
 
 ```swift
 func messageDismissed(_ message: InAppMessage)
@@ -723,7 +340,7 @@ func messageDismissed(_ message: InAppMessage)
 
 メッセージUIが表示された後、閉じられる際にコールされます。
 
-### messageClicked(InAppMessage)
+#### messageClicked(_:)
 
 ```swift
 func messageClicked(_ message: InAppMessage)
@@ -731,7 +348,7 @@ func messageClicked(_ message: InAppMessage)
 
 メッセージUIでユーザーによるポジティブなタップアクション（OKボタンのタップ）を行った際にコールされます。
 
-### messageDetectedForDisplay(InAppMessage)
+#### messageDetectedForDisplay(_:)
 
 ```swift
 func messageDetectedForDisplay(_ message: InAppMessage)
@@ -739,10 +356,22 @@ func messageDetectedForDisplay(_ message: InAppMessage)
 
 メッセージUIを表示すべき対象のメッセージが取得された際にコールされます。
 
-### messageError(InAppMessage?, AimstarException)
+#### messageError(_:error:)
 
 ```swift
-func messageError(_ message: InAppMessage?, error: Error)
+func messageError(_ message: InAppMessage?, error: AimstarError)
 ```
 
 SDK内でメッセージの取得や表示の際にエラーが発生した場合にコールされます。
+
+## InAppMessage
+
+```swift
+enum InAppMessage {
+    case popupModal(PopupModalContent)
+    case popupBanner(PopupBannerContent)
+    case embeddedBanner(EmbeddedBannerContent)
+}
+```
+
+SDKが取り扱うメッセージの型です。デリゲートメソッドの引数として渡されます。
