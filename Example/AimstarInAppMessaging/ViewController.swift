@@ -9,7 +9,7 @@ import UIKit
 import AimstarInAppMessagingSDK
 
 class ViewController: UIViewController {
-    
+
     private lazy var button = {
         let btn = UIButton(type: .system)
         btn.setTitle("send viewed event", for: UIControl.State())
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
+
         // ログインしているユーザーIDを連携します
         AimstarInAppMessaging.shared.customerId = "Your Customer ID"
     }
@@ -33,10 +33,10 @@ class ViewController: UIViewController {
             button.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-    
+
     @objc
     private func tapped() {
         // 擬似的にページ閲覧イベントを発生させます。
-        AimstarInAppMessaging.shared.fetch(screenName: "Your Screen Name")
+        AimstarInAppMessaging.shared.screenView("Your Screen Name")
     }
 }

@@ -41,16 +41,16 @@ extension AppDelegate: AimstarInAppMessagingDelegate {
     func messageDismissed(_ message: InAppMessage) {
         debugPrint("messageDismissed")
     }
-    
+
     func messageClicked(_ message: InAppMessage) {
         debugPrint("messageClicked")
     }
-    
+
     func messageDetectedForDisplay(_ message: InAppMessage) {
         debugPrint("messageDetectedForDisplay")
     }
-    
-    func messageError(_ message: InAppMessage?, error: Error) {
+
+    func messageError(_ message: InAppMessage?, error: AimstarError) {
         debugPrint("messageError")
     }
 }
