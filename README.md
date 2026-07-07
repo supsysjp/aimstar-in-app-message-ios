@@ -49,6 +49,8 @@ pod "AimstarInAppMessaging"
 
 `application(_:didFinishLaunchingWithOptions:)` メソッド内に初期化コードを追加します。
 
+> **Note:** `AimstarInAppMessaging` の API（`AimstarInAppMessaging.shared` および `setup` / `screenView` 等）は `@MainActor` に分離されています。`UIApplicationDelegate` / `UIViewController` などの UIKit 管理クラスは暗黙的に MainActor になるため、通常は特別な対応は不要です。非 MainActor コンテキスト（プレーンな関数・`actor`・`Task.detached` 等）から呼び出す場合は、呼び出し側に `@MainActor` を付与するか `await MainActor.run { ... }` で囲んでください（そのまま呼ぶとコンパイルエラーになります）。
+
 ```swift
 import AimstarInAppMessagingSDK
 

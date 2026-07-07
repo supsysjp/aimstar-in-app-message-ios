@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RLM85PXGUmLKY4c9A1yiKMXx2NM=
+		bFpW7ECL0756mG0BQMq6WxsXGqQ=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		iI3pPeysDWVOFvSht0aMhDW3u7Q=
+		/zrLQ3iAjIRA2THdNjZuVbTOOLk=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ugeG9uZUCB/x3EUCaHBEaMfDnZQ=
+		hPSaTc2OPoJ8tJv+t6X/g+rIlj4=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ugeG9uZUCB/x3EUCaHBEaMfDnZQ=
+		hPSaTc2OPoJ8tJv+t6X/g+rIlj4=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uSCus8QQcnFLTMRit082DtEwVB4=
+		PlhTfWZiFICtO+jUJ9NcB5AY5/8=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		iI3pPeysDWVOFvSht0aMhDW3u7Q=
+		/zrLQ3iAjIRA2THdNjZuVbTOOLk=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Gj2YjATWsSrowi1bUJGoD/hC0XE=
+		sDPQeAA8dIRE4ciVZZH1KRxlyyQ=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Gj2YjATWsSrowi1bUJGoD/hC0XE=
+		sDPQeAA8dIRE4ciVZZH1KRxlyyQ=
 		</data>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tQN6eqE1zyUOBHQT9Y/4YS/y2tM=
+		NJbilaxAUnems+Z5a51I8dRbFZY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBRuXbyMCWjSDkmNmf3rBjHC5eETbU6i8fIEN9bNzDI=
+			yJzLKSYRJfYrvQGgxNO1iiy3lK+3Dlm02nAa7p6nv6Y=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpH6mjIMWnBwAmRE+lQ+PvH25bVwM+6XRkFFnMwGkBM=
+			uO2Jle5ubBfsd2r/Dem18/Vivr4qarMgz8wG8Yk41Fk=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XpH6mjIMWnBwAmRE+lQ+PvH25bVwM+6XRkFFnMwGkBM=
+			uO2Jle5ubBfsd2r/Dem18/Vivr4qarMgz8wG8Yk41Fk=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1fEFKHfqvHIg+wiWgN42O05976ShfYyA9pE+Z25DPdM=
+			lNEjHOI0AAJLvBP8Onn1H/4TPi3J6LgJXd9rmfcAFSM=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBRuXbyMCWjSDkmNmf3rBjHC5eETbU6i8fIEN9bNzDI=
+			yJzLKSYRJfYrvQGgxNO1iiy3lK+3Dlm02nAa7p6nv6Y=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8cAdP0FZNHj7STW7LV76vTwmaHF+xvqi+6BZ7KGNNE=
+			Xb+cgbfroYyuiE5Y+eYtKeTe5xbkAt7bWAH46/edARI=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8cAdP0FZNHj7STW7LV76vTwmaHF+xvqi+6BZ7KGNNE=
+			Xb+cgbfroYyuiE5Y+eYtKeTe5xbkAt7bWAH46/edARI=
 			</data>
 		</dict>
 		<key>Modules/AimstarInAppMessagingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+nbmN0QjQR2d5QPHeO8hHH5O962JGYB5B6HU2IFb+Q=
+			AXcve151j0k9jND9ICP9stYj/HWLKDBpf6WPtU9U/4M=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

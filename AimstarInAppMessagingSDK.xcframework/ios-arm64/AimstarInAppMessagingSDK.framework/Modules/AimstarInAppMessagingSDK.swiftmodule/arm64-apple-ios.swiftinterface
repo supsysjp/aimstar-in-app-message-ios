@@ -4,34 +4,37 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import AimstarInAppMessagingSDK
 import Combine
+import CoreGraphics
 import Foundation
+import ImageIO
 import Swift
 import SwiftUI
 import UIKit
+import UniformTypeIdentifiers
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers public class AimstarInAppMessaging {
-  public static let shared: AimstarInAppMessagingSDK.AimstarInAppMessaging
-  weak public var delegate: (any AimstarInAppMessagingSDK.AimstarInAppMessagingDelegate)? {
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor public class AimstarInAppMessaging {
+  @_Concurrency.MainActor public static let shared: AimstarInAppMessagingSDK.AimstarInAppMessaging
+  @_Concurrency.MainActor weak public var delegate: (any AimstarInAppMessagingSDK.AimstarInAppMessagingDelegate)? {
     get
     set
   }
-  public var isStrictLogin: Swift.Bool {
+  @_Concurrency.MainActor public var isStrictLogin: Swift.Bool {
     get
     set
   }
   #if compiler(>=5.3) && $NonescapableTypes
-  public var customerId: Swift.String? {
+  @_Concurrency.MainActor public var customerId: Swift.String? {
     get
     set
   }
   #endif
-  public func setup(apiKey: Swift.String, tenantId: Swift.String)
-  public func setup(apiKey: Swift.String, tenantId: Swift.String, apiHost: Swift.String)
-  public func screenView(_ screenName: Swift.String, @AimstarInAppMessagingSDK.CustomParameterBuilder customParameter: () -> [AimstarInAppMessagingSDK.CustomParameterEntry] = { [] })
+  @_Concurrency.MainActor public func setup(apiKey: Swift.String, tenantId: Swift.String)
+  @_Concurrency.MainActor public func setup(apiKey: Swift.String, tenantId: Swift.String, apiHost: Swift.String)
+  @_Concurrency.MainActor public func screenView(_ screenName: Swift.String, @AimstarInAppMessagingSDK.CustomParameterBuilder customParameter: () -> [AimstarInAppMessagingSDK.CustomParameterEntry] = { [] })
   #if compiler(>=5.3) && $NonescapableTypes
-  public func screenView(_ screenName: Swift.String, on targetVC: UIKit.UIViewController, topAnchor: UIKit.NSLayoutYAxisAnchor? = nil, bottomAnchor: UIKit.NSLayoutYAxisAnchor? = nil, @AimstarInAppMessagingSDK.CustomParameterBuilder customParameter: () -> [AimstarInAppMessagingSDK.CustomParameterEntry] = { [] })
+  @_Concurrency.MainActor public func screenView(_ screenName: Swift.String, on targetVC: UIKit.UIViewController, topAnchor: UIKit.NSLayoutYAxisAnchor? = nil, bottomAnchor: UIKit.NSLayoutYAxisAnchor? = nil, @AimstarInAppMessagingSDK.CustomParameterBuilder customParameter: () -> [AimstarInAppMessagingSDK.CustomParameterEntry] = { [] })
   #endif
   @objc deinit
 }
@@ -57,7 +60,6 @@ public enum AimstarError : Swift.Error, Swift.Sendable {
   case serverError(statusCode: Swift.Int?)
   case networkError(error: any Swift.Error)
 }
-public typealias ComponentID = Swift.String
 public struct CustomParameterEntry {
 }
 @_functionBuilder public struct CustomParameterBuilder {
@@ -74,6 +76,7 @@ public func putBooleanArray(_ key: Swift.String, _ value: [Swift.Bool]) -> Aimst
 public struct EmbeddedBannerAction : Swift.Sendable {
   public let componentId: Swift.String
 }
+public typealias ComponentID = Swift.String
 @_Concurrency.MainActor @preconcurrency public struct IAMEmbeddedBanner : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(componentId: AimstarInAppMessagingSDK.ComponentID)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -103,33 +106,9 @@ public enum InAppMessage : Swift.Sendable {
   case embeddedBanner(AimstarInAppMessagingSDK.EmbeddedBannerAction)
   case unsupported(rawType: Swift.String)
 }
-public struct Margin : Swift.Decodable, Swift.Sendable {
-  public init(top: CoreFoundation.CGFloat = 0, bottom: CoreFoundation.CGFloat = 0, left: CoreFoundation.CGFloat = 0, right: CoreFoundation.CGFloat = 0)
-  public init(from decoder: any Swift.Decoder) throws
-}
 public struct PopupBannerAction : Swift.Sendable {
-  public let position: AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition
-  public let margin: AimstarInAppMessagingSDK.Margin
-  public enum DisplayPosition : Swift.String, Swift.Decodable, Swift.Hashable, Swift.Sendable {
-    case topLeft
-    case top
-    case topRight
-    case centerLeft
-    case center
-    case centerRight
-    case bottomLeft
-    case bottom
-    case bottomRight
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.String)
-    #endif
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
 }
 public struct PopupModalAction : Swift.Sendable {
 }
+extension AimstarInAppMessagingSDK.AimstarInAppMessaging : Swift.Sendable {}
 extension AimstarInAppMessagingSDK.IAMEmbeddedBanner : Swift.Sendable {}
-extension AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition : Swift.RawRepresentable {}

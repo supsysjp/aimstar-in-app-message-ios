@@ -44,6 +44,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Custom",
               "AccessControl"
             ],
             "isLet": true,
@@ -91,6 +92,7 @@
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
               "HasInitialValue",
+              "Custom",
               "HasStorage",
               "ReferenceOwnership",
               "AccessControl"
@@ -194,6 +196,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C13isStrictLoginSbvp",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -283,6 +286,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C10customerIdSSSgvp",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -391,6 +395,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C5setup6apiKey8tenantIdySS_SStF",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -430,6 +435,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C5setup6apiKey8tenantId0G4HostySS_S2StF",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -486,6 +492,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C10screenView_15customParameterySS_SayAA06CustomI5EntryVGyXEtF",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -579,6 +586,7 @@
             "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C10screenView_2on9topAnchor06bottomJ015customParameterySS_So16UIViewControllerCSo013NSLayoutYAxisJ0CSgAMSayAA06CustomM5EntryVGyXEtF",
             "moduleName": "AimstarInAppMessagingSDK",
             "declAttributes": [
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -590,7 +598,8 @@
         "mangledName": "$s24AimstarInAppMessagingSDK0abcD0C",
         "moduleName": "AimstarInAppMessagingSDK",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Custom"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -607,6 +616,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -918,6 +934,55 @@
             "mangledName": "$ss8CopyableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ImageIO",
+        "printedName": "ImageIO",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UniformTypeIdentifiers",
+        "printedName": "UniformTypeIdentifiers",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
       },
       {
         "kind": "Import",
@@ -1250,6 +1315,20 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1257,15 +1336,43 @@
       },
       {
         "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -1698,13 +1805,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AimstarInAppMessagingSDK"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1815,8 +1915,99 @@
       },
       {
         "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -2033,6 +2224,20 @@
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -2383,8 +2588,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -2659,8 +2864,22 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -2672,133 +2891,18 @@
         "moduleName": "AimstarInAppMessagingSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "Margin",
-        "printedName": "Margin",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(top:bottom:left:right:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Margin",
-                "printedName": "AimstarInAppMessagingSDK.Margin",
-                "usr": "s:24AimstarInAppMessagingSDK6MarginV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:24AimstarInAppMessagingSDK6MarginV3top6bottom4left5rightAC14CoreFoundation7CGFloatV_A3Jtcfc",
-            "mangledName": "$s24AimstarInAppMessagingSDK6MarginV3top6bottom4left5rightAC12CoreGraphics7CGFloatV_A3Jtcfc",
-            "moduleName": "AimstarInAppMessagingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Margin",
-                "printedName": "AimstarInAppMessagingSDK.Margin",
-                "usr": "s:24AimstarInAppMessagingSDK6MarginV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:24AimstarInAppMessagingSDK6MarginV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s24AimstarInAppMessagingSDK6MarginV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "AimstarInAppMessagingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:24AimstarInAppMessagingSDK6MarginV",
-        "mangledName": "$s24AimstarInAppMessagingSDK6MarginV",
-        "moduleName": "AimstarInAppMessagingSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          }
-        ]
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
       },
       {
         "kind": "Import",
@@ -2816,8 +2920,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -2846,589 +2950,6 @@
         "kind": "TypeDecl",
         "name": "PopupBannerAction",
         "printedName": "PopupBannerAction",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "position",
-            "printedName": "position",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DisplayPosition",
-                "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV8positionAC15DisplayPositionOvp",
-            "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV8positionAC15DisplayPositionOvp",
-            "moduleName": "AimstarInAppMessagingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DisplayPosition",
-                    "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV8positionAC15DisplayPositionOvg",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV8positionAC15DisplayPositionOvg",
-                "moduleName": "AimstarInAppMessagingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "margin",
-            "printedName": "margin",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Margin",
-                "printedName": "AimstarInAppMessagingSDK.Margin",
-                "usr": "s:24AimstarInAppMessagingSDK6MarginV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV6marginAA6MarginVvp",
-            "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV6marginAA6MarginVvp",
-            "moduleName": "AimstarInAppMessagingSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Margin",
-                    "printedName": "AimstarInAppMessagingSDK.Margin",
-                    "usr": "s:24AimstarInAppMessagingSDK6MarginV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV6marginAA6MarginVvg",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV6marginAA6MarginVvg",
-                "moduleName": "AimstarInAppMessagingSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "DisplayPosition",
-            "printedName": "DisplayPosition",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "topLeft",
-                "printedName": "topLeft",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO7topLeftyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO7topLeftyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "top",
-                "printedName": "top",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO3topyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO3topyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "topRight",
-                "printedName": "topRight",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8topRightyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8topRightyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "centerLeft",
-                "printedName": "centerLeft",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO10centerLeftyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO10centerLeftyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "center",
-                "printedName": "center",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO6centeryA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO6centeryA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "centerRight",
-                "printedName": "centerRight",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO11centerRightyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO11centerRightyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "bottomLeft",
-                "printedName": "bottomLeft",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO10bottomLeftyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO10bottomLeftyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "bottom",
-                "printedName": "bottom",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO6bottomyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO6bottomyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "bottomRight",
-                "printedName": "bottomRight",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type) -> AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "DisplayPosition",
-                            "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO11bottomRightyA2EmF",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO11bottomRightyA2EmF",
-                "moduleName": "AimstarInAppMessagingSDK"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DisplayPosition",
-                        "printedName": "AimstarInAppMessagingSDK.PopupBannerAction.DisplayPosition",
-                        "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueAESgSS_tcfc",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueAESgSS_tcfc",
-                "moduleName": "AimstarInAppMessagingSDK",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueSSvp",
-                "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueSSvp",
-                "moduleName": "AimstarInAppMessagingSDK",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueSSvg",
-                    "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO8rawValueSSvg",
-                    "moduleName": "AimstarInAppMessagingSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO",
-            "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV15DisplayPositionO",
-            "moduleName": "AimstarInAppMessagingSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "String",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "SendableMetatype",
-                "printedName": "SendableMetatype",
-                "usr": "s:s16SendableMetatypeP",
-                "mangledName": "$ss16SendableMetatypeP"
-              }
-            ]
-          }
-        ],
         "declKind": "Struct",
         "usr": "s:24AimstarInAppMessagingSDK17PopupBannerActionV",
         "mangledName": "$s24AimstarInAppMessagingSDK17PopupBannerActionV",
@@ -3467,6 +2988,48 @@
             "mangledName": "$ss16SendableMetatypeP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
       },
       {
         "kind": "Import",
@@ -3527,13 +3090,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AimstarInAppMessagingSDK"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3541,15 +3097,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AimstarInAppMessagingSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
         "declKind": "Import",
         "moduleName": "AimstarInAppMessagingSDK"
       },
@@ -3575,86 +3124,95 @@
         "moduleName": "AimstarInAppMessagingSDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "NSObject",
-        "printedName": "NSObject",
-        "declKind": "Class",
-        "usr": "c:objc(cs)NSObject",
-        "moduleName": "ObjectiveC",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "NSObject",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "Dynamic"
-        ],
-        "isExternal": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AimstarInAppMessagingSDK"
       },
       {
         "kind": "TypeDecl",
@@ -3863,72 +3421,191 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "Array",
-      "offset": 2505,
+      "offset": 2539,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "Array",
-      "offset": 3915,
+      "offset": 3949,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/AimstarInAppMessaging.swift",
       "kind": "Array",
-      "offset": 4989,
+      "offset": 4955,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/APIClient.swift",
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
       "kind": "IntegerLiteral",
-      "offset": 749,
+      "offset": 805,
       "length": 2,
-      "value": "30"
+      "value": "20"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 810,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 900,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1184,
+      "length": 4,
+      "value": "8192"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1513,
+      "length": 4,
+      "value": "4096"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1643,
+      "length": 10,
+      "value": "30000000"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Animation\/AnimatedImageDecoderPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1873,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/BannerKeyboardAvoider.swift",
       "kind": "Dictionary",
-      "offset": 685,
+      "offset": 864,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
-      "kind": "Dictionary",
-      "offset": 907,
-      "length": 3,
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/BannerKeyboardAvoider.swift",
+      "kind": "Array",
+      "offset": 916,
+      "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/BannerLifecycle.swift",
       "kind": "BooleanLiteral",
-      "offset": 942,
+      "offset": 910,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
-      "kind": "Dictionary",
-      "offset": 1177,
-      "length": 3,
-      "value": "[]"
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/BannerLifecycle.swift",
+      "kind": "BooleanLiteral",
+      "offset": 957,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
-      "kind": "Dictionary",
-      "offset": 1558,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/ComponentStore.swift",
-      "kind": "Array",
-      "offset": 1861,
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/CloseButtonMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 449,
       "length": 2,
-      "value": "[]"
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/CloseButtonMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 519,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/CloseButtonMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 612,
+      "length": 2,
+      "value": "44"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/CloseButtonMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 721,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/ContentsLength.swift",
+      "kind": "IntegerLiteral",
+      "offset": 546,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/ContentsLength.swift",
+      "kind": "IntegerLiteral",
+      "offset": 550,
+      "length": 3,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/ContentsLength.swift",
+      "kind": "IntegerLiteral",
+      "offset": 648,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/ContentsLength.swift",
+      "kind": "IntegerLiteral",
+      "offset": 652,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/ContentsSize+ScreenBounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1560,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/ContentsSize+ScreenBounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1566,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/ContentsSize+ScreenBounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1576,
+      "length": 3,
+      "value": "390"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/ContentsSize+ScreenBounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1589,
+      "length": 3,
+      "value": "844"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/Creative.swift",
@@ -3987,200 +3664,200 @@
       "value": "\"background_color\""
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/EventsReactionRequest.swift",
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Configuration\/DeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 289,
-      "length": 2,
-      "value": "\"\""
+      "offset": 228,
+      "length": 12,
+      "value": "\"hw.machine\""
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/EventsViewRequest.swift",
-      "kind": "StringLiteral",
-      "offset": 185,
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/EmbeddedBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 428,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/EmbeddedBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 589,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/EmbeddedBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 913,
       "length": 2,
-      "value": "\"\""
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/EmbeddedBannerStore.swift",
+      "kind": "Dictionary",
+      "offset": 832,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/EmbeddedBannerStore.swift",
+      "kind": "BooleanLiteral",
+      "offset": 867,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 11,
+      "value": "\"tenant-id\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 385,
+      "length": 11,
+      "value": "\"x-api-key\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 21,
+      "value": "\"x-ignite-visitor-id\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 474,
+      "length": 22,
+      "value": "\"x-ignite-customer-id\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 517,
+      "length": 6,
+      "value": "\"x-os\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 14,
+      "value": "\"x-os-version\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 594,
+      "length": 15,
+      "value": "\"x-device-name\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 638,
+      "length": 15,
+      "value": "\"x-sdk-version\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/HeaderKey.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 14,
+      "value": "\"content-type\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMAnimatedImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 954,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMAnimatedImageView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 994,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/IAMAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 821,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/IAMAnimation.swift",
+      "kind": "FloatLiteral",
+      "offset": 927,
+      "length": 3,
+      "value": "1.5"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/SwiftUI\/IAMEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1959,
+      "offset": 1408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/SwiftUI\/IAMPopupBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 275,
+      "offset": 290,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/SwiftUI\/IAMPopupBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 469,
+      "offset": 484,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 639,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 871,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1122,
+      "offset": 834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1227,
+      "offset": 943,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1315,
-      "length": 4,
-      "value": "0.15"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1366,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1377,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1412,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1607,
+      "offset": 1451,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1650,
+      "offset": 1496,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1760,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2025,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2034,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2045,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2055,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2130,
+      "offset": 2153,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2236,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2500,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2509,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2520,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2530,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2605,
+      "offset": 2806,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupBannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3302,
-      "length": 1,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
@@ -4192,187 +3869,124 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 829,
+      "offset": 885,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 864,
+      "offset": 922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 956,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1006,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1017,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1052,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1246,
+      "offset": 1431,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1289,
+      "offset": 1476,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1420,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1737,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2012,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2043,
+      "offset": 2439,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2347,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2378,
+      "offset": 2863,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10045,
+      "offset": 10882,
       "length": 36,
       "value": "\"https:\/\/growth-verse.ai\/img\/mv.png\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10117,
+      "offset": 10954,
       "length": 22,
       "value": "\"Lorem ipsum dolor si\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10174,
+      "offset": 11011,
       "length": 102,
       "value": "\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10315,
+      "offset": 11152,
       "length": 11,
       "value": "\"ボタン\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10339,
+      "offset": 11176,
       "length": 8,
       "value": "\"FFFFFF\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMPopupModalViewController.swift",
       "kind": "StringLiteral",
-      "offset": 10366,
+      "offset": 11203,
       "length": 8,
       "value": "\"333333\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1078,
       "length": 36,
       "value": "\"https:\/\/growth-verse.ai\/img\/mv.png\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1162,
       "length": 22,
       "value": "\"Lorem ipsum dolor si\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1231,
       "length": 102,
       "value": "\"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1384,
       "length": 11,
       "value": "\"ボタン\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1408,
       "length": 8,
       "value": "\"FFFFFF\""
     },
     {
-      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX224_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
+      "filePath": "@__swiftmacro_24AimstarInAppMessagingSDK0038IAMPopupModalViewControllerswift_yoBAmfMX232_0_33_81B807BC796E5F0883BDFD6654D64CA8Ll7PreviewfMf_.swift",
       "kind": "StringLiteral",
       "offset": 1435,
       "length": 8,
@@ -4381,14 +3995,21 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/SwiftUI\/IAMScreenModifier.swift",
       "kind": "Array",
-      "offset": 5772,
+      "offset": 6146,
       "length": 2,
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/IAMShadow.swift",
+      "kind": "IntegerLiteral",
+      "offset": 798,
+      "length": 1,
+      "value": "8"
+    },
+    {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMShimmerUIView.swift",
       "kind": "StringLiteral",
-      "offset": 999,
+      "offset": 91,
       "length": 9,
       "value": "\"shimmer\""
     },
@@ -4402,77 +4023,56 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 781,
+      "offset": 786,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 829,
+      "offset": 834,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 877,
+      "offset": 882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1265,
+      "offset": 1270,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1295,
+      "offset": 1300,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1487,
-      "length": 1,
-      "value": "8"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 1783,
+      "offset": 1839,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2141,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2239,
+      "offset": 2327,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2430,
-      "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/UIKit\/IAMUIEmbeddedBanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2529,
+      "offset": 2649,
       "length": 1,
       "value": "0"
     },
@@ -4486,177 +4086,429 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/InAppMessageAction.swift",
       "kind": "IntegerLiteral",
-      "offset": 2993,
+      "offset": 3389,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/InAppMessageAction.swift",
       "kind": "StringLiteral",
-      "offset": 4715,
+      "offset": 5111,
       "length": 13,
       "value": "\"scenario_id\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/InAppMessageAction.swift",
       "kind": "StringLiteral",
-      "offset": 4754,
+      "offset": 5150,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/InAppMessageAction.swift",
       "kind": "StringLiteral",
-      "offset": 4815,
+      "offset": 5211,
       "length": 13,
       "value": "\"action_type\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/InAppMessageAction.swift",
       "kind": "StringLiteral",
-      "offset": 9678,
+      "offset": 8205,
       "length": 14,
       "value": "\"component_id\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/Margin.swift",
       "kind": "IntegerLiteral",
-      "offset": 204,
+      "offset": 190,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/Margin.swift",
       "kind": "IntegerLiteral",
-      "offset": 225,
+      "offset": 211,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/Margin.swift",
       "kind": "IntegerLiteral",
-      "offset": 244,
+      "offset": 230,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/Margin.swift",
       "kind": "IntegerLiteral",
-      "offset": 264,
+      "offset": 250,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/MessagePresenter.swift",
-      "kind": "Dictionary",
-      "offset": 264,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/MessagePresenter.swift",
-      "kind": "Dictionary",
-      "offset": 367,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/MessagePresenter.swift",
-      "kind": "Dictionary",
-      "offset": 641,
-      "length": 3,
-      "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/MessageService.swift",
       "kind": "BooleanLiteral",
-      "offset": 517,
+      "offset": 522,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/MessageService.swift",
       "kind": "IntegerLiteral",
-      "offset": 757,
+      "offset": 762,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/MessageService.swift",
       "kind": "Array",
-      "offset": 2210,
+      "offset": 2098,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/MessageService.swift",
       "kind": "Array",
-      "offset": 3014,
+      "offset": 3252,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/MessageService.swift",
       "kind": "Array",
-      "offset": 11923,
+      "offset": 13825,
       "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 578,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 730,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 872,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1025,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1135,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1141,
+      "length": 3,
+      "value": "299"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1276,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1282,
+      "length": 3,
+      "value": "499"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1411,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1417,
+      "length": 3,
+      "value": "599"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/NetworkPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1583,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/OpenReactionTracker.swift",
+      "kind": "Dictionary",
+      "offset": 434,
+      "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 301,
+      "offset": 327,
       "length": 10,
       "value": "\"top_left\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 353,
+      "offset": 379,
       "length": 11,
       "value": "\"top_right\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 391,
+      "offset": 417,
       "length": 13,
       "value": "\"center_left\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 452,
+      "offset": 478,
       "length": 14,
       "value": "\"center_right\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 493,
+      "offset": 519,
       "length": 13,
       "value": "\"bottom_left\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "StringLiteral",
-      "offset": 554,
+      "offset": 580,
       "length": 14,
       "value": "\"bottom_right\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupBannerAction.swift",
       "kind": "FloatLiteral",
-      "offset": 1764,
+      "offset": 1736,
       "length": 3,
       "value": "0.5"
     },
     {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 491,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 612,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 730,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 875,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 993,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1077,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1169,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 1303,
+      "length": 4,
+      "value": "0.75"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1441,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1678,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupBannerMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1866,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/PopupBannerPresenter.swift",
+      "kind": "Dictionary",
+      "offset": 1323,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/PopupBannerPresenter.swift",
+      "kind": "Dictionary",
+      "offset": 1405,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/PopupBannerQueueController.swift",
+      "kind": "Dictionary",
+      "offset": 930,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/PopupBannerQueueController.swift",
+      "kind": "Array",
+      "offset": 987,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Presentation\/PopupBannerStore.swift",
+      "kind": "Dictionary",
+      "offset": 980,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Models\/PopupModalAction.swift",
       "kind": "FloatLiteral",
-      "offset": 209,
+      "offset": 228,
       "length": 3,
       "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 435,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 441,
+      "length": 4,
+      "value": "16.0"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 595,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 717,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 836,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 922,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1021,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1128,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1248,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/PopupModalMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 1402,
+      "length": 3,
+      "value": "0.4"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Service\/ReactionBackgroundTask.swift",
@@ -4666,46 +4518,46 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/RequestHeaderBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 345,
+      "length": 5,
+      "value": "\"iOS\""
+    },
+    {
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Network\/RequestHeaderBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 18,
+      "value": "\"application\/json\""
+    },
+    {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Configuration\/SDKConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 42,
+      "offset": 123,
       "length": 41,
       "value": "\"https:\/\/event-prod.aimstar.jp\/ignite\/v1\""
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/Configuration\/SDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 322,
+      "offset": 304,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIButton+Close.swift",
-      "kind": "IntegerLiteral",
-      "offset": 433,
-      "length": 2,
-      "value": "12"
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/ShimmerMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 512,
+      "length": 3,
+      "value": "0.6"
     },
     {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIButton+Close.swift",
-      "kind": "IntegerLiteral",
-      "offset": 503,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIButton+Close.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 2,
-      "value": "44"
-    },
-    {
-      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIButton+Close.swift",
-      "kind": "IntegerLiteral",
-      "offset": 705,
-      "length": 1,
-      "value": "2"
+      "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Tokens\/ShimmerMetrics.swift",
+      "kind": "FloatLiteral",
+      "offset": 555,
+      "length": 3,
+      "value": "0.4"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
@@ -4717,49 +4569,49 @@
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "FloatLiteral",
-      "offset": 398,
+      "offset": 396,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "IntegerLiteral",
-      "offset": 1032,
+      "offset": 1028,
       "length": 8,
       "value": "0x1d2635"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "IntegerLiteral",
-      "offset": 1139,
+      "offset": 1135,
       "length": 8,
       "value": "0x333333"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "IntegerLiteral",
-      "offset": 1282,
+      "offset": 1278,
       "length": 8,
       "value": "0x586976"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "FloatLiteral",
-      "offset": 1299,
+      "offset": 1295,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
+      "offset": 1406,
       "length": 8,
       "value": "0x44464B"
     },
     {
       "filePath": "\/Users\/sakashita\/01-aimstar\/github\/in-app-messaging\/in_app_message_sdk_ios\/AimstarInAppMessaging\/Classes\/View\/Extensions\/UIColor+Hex.swift",
       "kind": "IntegerLiteral",
-      "offset": 1532,
+      "offset": 1528,
       "length": 8,
       "value": "0xD3D4DB"
     }
