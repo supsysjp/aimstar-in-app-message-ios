@@ -306,10 +306,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSCoder;
+/// 埋め込みバナーを表示する UIKit View。
+/// important:
+/// この View は <code>screenView(_:on:)</code> / <code>mockScreenView(_:on:)</code> に渡した
+/// targetVC の View 階層内に配置すること。View は responder chain 上の ViewController と
+/// 現サイクルの起点 VC の一致で「Store の内容が自画面のものか」を帰属判定するため、
+/// targetVC の階層外 (window 直付けのオーバーレイ等) に置かれたバナーは表示されない。
+/// UITableView / UICollectionView のセル内配置 (fetch 完了後の遅延生成) には対応する。
 SWIFT_CLASS("_TtC24AimstarInAppMessagingSDK19IAMUIEmbeddedBanner")
 @interface IAMUIEmbeddedBanner : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
 @end
 
 #endif
@@ -628,10 +636,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSCoder;
+/// 埋め込みバナーを表示する UIKit View。
+/// important:
+/// この View は <code>screenView(_:on:)</code> / <code>mockScreenView(_:on:)</code> に渡した
+/// targetVC の View 階層内に配置すること。View は responder chain 上の ViewController と
+/// 現サイクルの起点 VC の一致で「Store の内容が自画面のものか」を帰属判定するため、
+/// targetVC の階層外 (window 直付けのオーバーレイ等) に置かれたバナーは表示されない。
+/// UITableView / UICollectionView のセル内配置 (fetch 完了後の遅延生成) には対応する。
 SWIFT_CLASS("_TtC24AimstarInAppMessagingSDK19IAMUIEmbeddedBanner")
 @interface IAMUIEmbeddedBanner : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)didMoveToWindow;
 @end
 
 #endif

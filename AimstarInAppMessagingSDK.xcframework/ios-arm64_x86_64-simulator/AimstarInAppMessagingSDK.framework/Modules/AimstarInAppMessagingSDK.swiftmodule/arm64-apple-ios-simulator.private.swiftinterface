@@ -78,7 +78,9 @@ public struct EmbeddedBannerAction : Swift.Sendable {
 }
 public typealias ComponentID = Swift.String
 @_Concurrency.MainActor @preconcurrency public struct IAMEmbeddedBanner : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(componentId: AimstarInAppMessagingSDK.ComponentID)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(componentId: AimstarInAppMessagingSDK.ComponentID, screenName: Swift.String? = nil, showsLoadingPlaceholder: Swift.Bool = false)
+  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -90,6 +92,10 @@ extension SwiftUICore.View {
   
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class IAMUIEmbeddedBanner : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency final public var showsLoadingPlaceholder: Swift.Bool {
+    get
+    set
+  }
   @_Concurrency.MainActor @preconcurrency final public var componentId: AimstarInAppMessagingSDK.ComponentID? {
     get
     set
@@ -98,6 +104,7 @@ extension SwiftUICore.View {
   #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
+  @_Concurrency.MainActor @preconcurrency @objc override final public func didMoveToWindow()
   @objc deinit
 }
 public enum InAppMessage : Swift.Sendable {
